@@ -13,62 +13,63 @@ body {
 }
 
 nav {
-  display: block;
   background-color: #990033;
-  text-align: center;
+  color: #ffffff;
+  font-family: arial, bold;
+  font-size: 1em;
+  height: 50px;
   width: 100%;
-  margin: 0 10px;
+  margin: 0 auto;
 }
 
 nav ul {
   display: flex;
+  list-style-type: none;
+  text-align: center;
+  line-height: 50px;
 }
 
 nav ul li {
-  display: flex;
   margin: 0 10px;
+  display: inline-block;
+  margin: 0 auto;
   padding: 0;
-  list-style-type: none;
-  width: 30px;
 }
 
 nav ul li a {
-  display: flex;
-  padding: 8px 0;
   color: #ffffff;
   text-decoration: none;
-  text-align: center;
 }
 
 nav ul li a:hover {
   color: #ffffcc;
   text-decoration: none;
+  transition: 0.3 background-colour;
 }
 
 main {
-  width: 80%;
-  padding: 50px;
-  display: inline-block;
   background-color: #ffffff;
-}
-
-section .row1 {
   width: 80%;
   text-align: center;
 }
 
-#wine1 {
+section #row1 {
+  width: 80%;
+  text-align: center;
+}
+
+.wine1 {
   float: left;
   width: 80%;
 }
 
-#wine2 {
+.wine2 {
   display: inline-block;
   margin: 0;
   width: 80%;
 }
 
-#wine3 {
+.wine3 {
   float: right;
   width: 80%;
 }
