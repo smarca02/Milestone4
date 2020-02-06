@@ -39,7 +39,8 @@
           <h3 class="wine_name">Gavi di Gavi DOCG</h3>
           <h4 class="origin">from Piedmont</h4>
           <p class="descr">This is a light white from Cortese grapes.</p>
-            <span class="price">£15 per bottle</span>
+            <span class="price">£15</span>
+            <span class="size">per bottle</span>
             <button type="submit" id="AddBtn">Add to Cart</button>
         </div>
         <div class="wine_item"><!--Frappato wine-->
@@ -52,7 +53,8 @@
           <h3 class="wine_name">Frappato IGP</h3>
           <h4 class="origin">from Sicily</h4>
           <p class="descr">A red wine with a nice structure.</p>
-            <span class="price">£10 per bottle</span>
+            <span class="price">£10</span>
+            <span class="size">per bottle</span>
             <button type="submit" id="AddBtn">Add to Cart</button>
         </div>
         <div class="wine_item"><!--Prosecco wine-->
@@ -65,7 +67,8 @@
           <h3 class="wine_name">Prosecco Extra Dry DOCG</h3>
           <h4 class="origin">from Veneto</h4>
           <p class="descr">Wonderful bubbles, great for celebrations.</p>
-            <span class="price">£20 per bottle</span>
+            <span class="price">£20</span>
+            <span class="size">per bottle</span>
             <button type="submit" id="AddBtn">Add to Cart</button>
         </div>
       </section>
@@ -81,7 +84,8 @@
           <h3 class="wine_name">Lambrusco DOC</h3>
           <h4 class="origin">from Emilia-Romagna</h4>
           <p class="descr">A light sparkling red. Try it with pizza.</p>
-            <span class="price">£16 per bottle</span>
+            <span class="price">£16</span>
+            <span class="size">per bottle</span>
             <button type="submit" id="AddBtn">Add to Cart</button>
         </div>
         <div class="wine_item"><!--Vermentino wine-->
@@ -94,7 +98,8 @@
           <h3 class="wine_name">Vermentino DOC</h3>
           <h4 class="origin">from Sardinia</h4>
           <p class="descr">A fresh and fruity white.</p>
-            <span class="price">£13 per bottle</span>
+            <span class="price">£13</span>
+            <span class="size">per bottle</span>
             <button type="submit" id="AddBtn">Add to Cart</button>
         </div>
         <span/span class="wine_item"><!--Chianti wine-->
@@ -107,7 +112,8 @@
           <h3 class="wine_name">Chianti DOC</h3>
           <h4 class="origin">from Tuscany</h4>
           <p class="descr">Full-bodied with great tannins.</p>
-            <span class="price">£25 per bottle</span>
+            <span class="price">£25</span>
+            <span class="size">per bottle</span>
             <button type="submit" id="AddBtn">Add to Cart</button>
         </div>
       </section>
@@ -120,13 +126,26 @@
       <div>Price</div>
       <div>Quantity</div>
       </div>
+      <hr class="hor_dot_line"/>
       <div class="shop_list">
-<img src="gavi.jpg" alt="placeholder"/><a href=".index.html"></a>
+        <div class="shop_list_row">
+          <div class="shop_img_name">
+        <img class="shop_wine_img" src="gavi.jpg" alt="placeholder" width="30" heigth="30" />
+        <span class="shop_wine_name">Gavi di Gavi</span>
+        </div>
+        <span class="shop_price">£15</span>
+        <div class="shop_quantity_res">
+        <input type="number" min=1 id="shop_quantity" value="1"/>
+        <button type="reset" id="ResBtn">X</button>
+      </div>
+        </div>
+      </div>
 
 
         <label for="Total">Total</label>
-        <button type="submit" id="AddBtn">Add to Cart</button>
-        <button type="reset" id="ResBtn">Remove</button>
+
+        
+      </div>
     </div>
     </section>
     </main>

@@ -124,7 +124,8 @@ h4 {
   justify-content: space-between;
 }
 
-.price {
+.price,
+.size {
   padding-bottom: 5px;
   font-weight: bold;
   vertical-align: middle;
@@ -160,12 +161,75 @@ h4 {
   justify-content: space-evenly;
 }
 
-.shop_menu div {
-  margin-top: 10px;
-  padding: 10px;
-  align-content: space-between;
-}
 .shop_list {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.shop_list_row {
+  width: 80%;
+  position: relative;
+  top: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  vertical-align: middle;
+  justify-content: space-evenly;
+  border-bottom: 1px dashed #990033;
+}
+
+.shop_img_name {
+  position: relative;
+  top: 50%;
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
+  margin-top: 10px;
+}
+
+.shop_price {
+  top: 50%;
+  align-items: center;
+  vertical-align: middle;
+  width: 20%;
+  font-size: 1.2em;
+}
+
+#shop_quantity {
+  max-width: 5em;
+  max-height: 1.2em;
+  margin-right: 1em;
+}
+
+.shop_wine_img {
+  width: 30px;
+  height: auto;
+}
+
+.shop_wine_name {
+  margin-left: 0.5em;
+  font-size: 1.2em;
+}
+
+#ResBtn {
+  font-family: arial, bolder;
+  background-color: #000000;
+  border-radius: 30px;
+  max-width: 30px;
+  max-height: 30px;
+  align-items: center;
+  color: #ffffff;
+  font-size: 0.6em;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: 0.4s;
+}
+
+#ResBtn:hover {
+  background-color: #ffffff;
+  color: #000000;
+  border: 3px solid #000000;
+  transition: 0.4s;
 }
 
 /* footer not active */
