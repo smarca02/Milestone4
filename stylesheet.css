@@ -67,12 +67,6 @@ main {
   text-align: center;
 }
 
-.wine1 .wine2 .wine3 {
-  max-width: 10%;
-  height: auto;
-  padding: 50px;
-}
-
 h1 {
   display: flex;
   justify-content: center;
@@ -91,18 +85,10 @@ h4 {
   margin-top: -15px;
 }
 
-p {
+.descr {
   font-size: 0.8em;
   font-stretch: semi-condensed;
-}
-
-label {
-  font-size: 0.8em;
-}
-
-input {
-  max-width: 50px;
-  display: center;
+  margin-top: -5px;
 }
 
 #AddBtn {
@@ -128,7 +114,8 @@ input {
   transition: 0.4s;
 }
 
-#row1 {
+#row1,
+#row2 {
   width: 80%;
   display: inline-flex;
   padding: 20px;
@@ -137,40 +124,51 @@ input {
   justify-content: space-between;
 }
 
-#row2 {
-  width: 80%;
-  display: inline-flex;
-  padding: 20px;
-  flex-direction: row;
-  text-align: center;
-  justify-content: space-between;
+.price {
+  padding-bottom: 5px;
+  font-weight: bold;
+  vertical-align: middle;
 }
 
+/* shopping cart part */
 .hor_dot_line {
-  margin-top: 50px;
   border: 0 none;
   border-top: 1px dashed #990033;
   background: none;
-  width: 70%;
+  width: 80%;
   height: 0;
 }
 
 #shoppingcart title {
-  background-color: #990033;
-  color: #ffffff;
-  font-family: arial, bold;
+  color: #990033;
+  font-family: arial;
+  font-weight: 700;
   font-size: 1.6em;
-  text-transform: capitalize;
+  text-transform: uppercase;
   margin: auto;
-  padding: 15px 60px;
   display: inline-flex;
 }
 
 #shoppingcart {
-  justify-content: center;
+  justify-content: space-evenly;
   padding: 20px;
 }
 
+.shop_menu {
+  display: flex;
+  flex-flow: flex;
+  justify-content: space-evenly;
+}
+
+.shop_menu div {
+  margin-top: 10px;
+  padding: 10px;
+  align-content: space-between;
+}
+.shop_list {
+}
+
+/* footer not active */
 footer {
   background-color: #000000;
   border-color: #000000;

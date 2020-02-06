@@ -29,114 +29,105 @@
       <h1>Our wine selection</h1>
       <!-- First row of three bottles-->
       <section id="row1">
-        <div class="wine1">
+        <div class="wine_item"><!--Gavi wine-->
           <p>
-            <img
+            <img class="wine_img"
               src="Gavi.jpg"
               alt="white wine Gavi glass bottle with cork 75cl"
             /><a href=".index.html"></a>
           </p>
-          <h3>Gavi di Gavi DOCG</h3>
-          <h4>from Piedmont</h4>
-          <p>This is a light white from Cortese grapes.</p>
-          <form id="wine1">
-            <label for="gavi1">Quantity</label>
-            <input type="number" min="1" id="gavi1" value="1" />
+          <h3 class="wine_name">Gavi di Gavi DOCG</h3>
+          <h4 class="origin">from Piedmont</h4>
+          <p class="descr">This is a light white from Cortese grapes.</p>
+            <span class="price">£15 per bottle</span>
             <button type="submit" id="AddBtn">Add to Cart</button>
-          </form>
         </div>
-        <div class="wine2">
+        <div class="wine_item"><!--Frappato wine-->
           <p>
-            <img
+            <img class="wine_img"
               src="Frappato.jpg"
               alt="red wine Frappato glass bottle with cork 75cl"
             /><a href=".index.html"></a>
           </p>
-          <h3>Frappato IGP</h3>
-          <h4>from Sicily</h4>
-          <p>A red wine with a nice structure.</p>
-          <form id="wine2">
-            <label for="frappato1">Quantity</label>
-            <input type="number" min="1" id="frappato1" value="1" />
+          <h3 class="wine_name">Frappato IGP</h3>
+          <h4 class="origin">from Sicily</h4>
+          <p class="descr">A red wine with a nice structure.</p>
+            <span class="price">£10 per bottle</span>
             <button type="submit" id="AddBtn">Add to Cart</button>
-          </form>
         </div>
-        <div class="wine3">
+        <div class="wine_item"><!--Prosecco wine-->
           <p>
-            <img
+            <img class="wine_img"
               src="prosecco.jpg"
               alt="sparkling wine Prosecco glass bottle with cork 75cl"
             /><a href=".index.html"></a>
           </p>
-          <h3>Prosecco Extra Dry DOCG</h3>
-          <h4>from Veneto</h4>
-          <p>Wonderful bubbles, great for celebrations.</p>
-          <form id="wine3">
-            <label for="prosecco1">Quantity</label>
-            <input type="number" min="1" id="prosecco1" value="1" />
+          <h3 class="wine_name">Prosecco Extra Dry DOCG</h3>
+          <h4 class="origin">from Veneto</h4>
+          <p class="descr">Wonderful bubbles, great for celebrations.</p>
+            <span class="price">£20 per bottle</span>
             <button type="submit" id="AddBtn">Add to Cart</button>
-          </form>
         </div>
       </section>
       <!-- Second row of three bottles-->
       <section id="row2">
-        <div class="wine4">
+        <div class="wine_item"><!--Lambrusco wine-->
           <p>
-            <img
+            <img class="wine_img"
               src="Lambrusco.jpg"
               alt="sparkling red wine Lambrusco glass bottle with cork 75cl"
             /><a href=".index.html"></a>
           </p>
-          <h3>Lambrusco DOC</h3>
-          <h4>from Emilia-Romagna</h4>
-          <p>A light sparkling red. Try it with pizza</p>
-            <label for="lambrusco1">Quantity</label>
-            <input type="number" min="1" id="lambrusco1" value="1" />
+          <h3 class="wine_name">Lambrusco DOC</h3>
+          <h4 class="origin">from Emilia-Romagna</h4>
+          <p class="descr">A light sparkling red. Try it with pizza.</p>
+            <span class="price">£16 per bottle</span>
             <button type="submit" id="AddBtn">Add to Cart</button>
-          </form>
         </div>
-        <div class="wine5">
+        <div class="wine_item"><!--Vermentino wine-->
           <p>
-            <img
+            <img class="wine_img"
               src="Vermentino.jpg"
               alt="white wine Vermentino glass bottle screw cap 75cl"
             /><a href=".index.html"></a>
           </p>
-          <h3>Vermentino DOC</h3>
-          <h4>from Sardinia</h4>
-          <p>A fresh and fruity white.</p>
-          <form id="wine5">
-            <label for="vermentino1">Quantity</label>
-            <input type="number" min="1" id="vermentino1" value="1" />
+          <h3 class="wine_name">Vermentino DOC</h3>
+          <h4 class="origin">from Sardinia</h4>
+          <p class="descr">A fresh and fruity white.</p>
+            <span class="price">£13 per bottle</span>
             <button type="submit" id="AddBtn">Add to Cart</button>
-          </form>
         </div>
-        <div class="wine6">
+        <span/span class="wine_item"><!--Chianti wine-->
           <p>
-            <img
+            <img class="wine_img"
               src="Chianti.jpg"
               alt="Red Chianti glass bottle with cork 75cl"
             /><a href=".index.html"></a>
           </p>
-          <h3>Chianti DOC</h3>
-          <h4>from Tuscany</h4>
-          <p>Full-bodied with great tannins.</p>
-          <form id="wine6">
-            <label for="chianti1">Quantity</label>
-            <input type="number" min="1" id="chianti1" value="1" />
+          <h3 class="wine_name">Chianti DOC</h3>
+          <h4 class="origin">from Tuscany</h4>
+          <p class="descr">Full-bodied with great tannins.</p>
+            <span class="price">£25 per bottle</span>
             <button type="submit" id="AddBtn">Add to Cart</button>
-          </form>
         </div>
       </section>
       <!-- Shopping cart part-->
       <section id="shoppingcart">
       <title>Shopping Cart</title>
-      <div>
+      <hr class="hor_dot_line"/>
+      <div class="shop_menu">
+      <div>Item</div>
+      <div>Price</div>
+      <div>Quantity</div>
+      </div>
+      <div class="shop_list">
+<img src="gavi.jpg" alt="placeholder"/><a href=".index.html"></a>
+
+
         <label for="Total">Total</label>
         <button type="submit" id="AddBtn">Add to Cart</button>
         <button type="reset" id="ResBtn">Remove</button>
-      </div>
-      <hr class="hor_dot_line"/>
+    </div>
     </section>
     </main>
     <footer id="mainfooter">
