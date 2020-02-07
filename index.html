@@ -65,7 +65,7 @@
               alt="sparkling wine Prosecco glass bottle with cork 75cl"
             /><a href=".index.html"></a>
           </p>
-          <h3 class="wine_name">Prosecco Extra Dry DOCG</h3>
+          <h3 class="wine_name">Prosecco DOCG</h3>
           <h4 class="origin">from Veneto</h4>
           <p class="descr">Wonderful bubbles, great for celebrations.</p>
             <span class="price">£20</span>
@@ -169,10 +169,15 @@
         <li>All the small print</li>
       </ul>
     </footer>
+    <!--Vanilla Javascript below-->
     <script>
-      const ResBtn = document.getElementById("ResBtn")
-      console.log(ResBtn)
-      for (let i = 0; i <= ResBtn.length; i++) {
+let AddCart = document.querySelectorAll("#AddBtn");
+for (let i = 0; i < AddCart.length; i++ ) {
+  console.log("my loop");
+}
+
+      const ResBtn = document.getElementById("#ResBtn")
+      for (let i = 0; i < ResBtn.length; i++) {
         const button = ResBtn[i]
         button.AddEventListener("click", function(event) {
         const buttonClicked = event.target
@@ -181,20 +186,20 @@
         })
       }
 
-      function updatedShop_total() {
-      const shopListContainer = document.getElementByClassName("shop_list")[0]
-      const shopListRows = shopListContainer.getElementByClassName("shop_list_row")
-      const total = 0
-      for (let i = 0; i <= shopListRows.length; i++) {
-        const shopListRow = shopListRows[i]
-        const priceElement = shopListRow.getElementByClassName("shop_price")[0]
-        const quantityElement = shopListRow.getElementbyId("shop_quantity")[0]
-        const shopPrice = parsefloat(priceElement.innerText.replace("£", ""))
-        const shopQuantity = quantityElement.value
-        total = total + (shopPrice * shopQuantity)
-      }
-      document.getElementByClassName("total_price")[0].innerText = "£" + total
-      }
+      //function updatedShop_total() {
+      //const shopListContainer = document.getElementByClassName("shop_list")[0]
+      //const shopListRows = shopListContainer.getElementByClassName("shop_list_row")
+      //const total = 0
+      //for (let i = 0; i <= shopListRows.length; i++) {
+        //const shopListRow = shopListRows[i]
+        //const priceElement = shopListRow.getElementByClassName("shop_price")[0]
+        //const quantityElement = shopListRow.getElementbyId("shop_quantity")[0]
+        //const shopPrice = parsefloat(priceElement.innerText.replace("£", ""))
+        //const shopQuantity = quantityElement.value
+        //total = total + (shopPrice * shopQuantity)
+      //}
+      //document.getElementByClassName("total_price")[0].innerText = "£" + total
+      //}
     </script>
   </body>
 </htlm>
