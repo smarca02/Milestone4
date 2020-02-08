@@ -95,7 +95,7 @@ h4 {
   margin-top: -5px;
 }
 
-#AddBtn {
+.AddBtn {
   font-family: arial, bold;
   background-color: #990033;
   border: 3px solid #990033;
@@ -111,7 +111,7 @@ h4 {
   transition: 0.4s;
 }
 
-#AddBtn:hover {
+.AddBtn:hover {
   background-color: #ffffff;
   color: #990033;
   border: 3px solid #990033;
@@ -167,6 +167,7 @@ h4 {
 
 .shop_list {
   display: flex;
+  flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
 }
